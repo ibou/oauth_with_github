@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\User;
+
 use Doctrine\ORM\EntityManagerInterface;
 use KnpU\OAuth2ClientBundle\Client\ClientRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -14,7 +14,7 @@ use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
 class SecurityController extends AbstractController
 {
     /**
-     * @Route("/login", name="app_login")
+     * @Route("/", name="app_login")
      * @param AuthenticationUtils $authenticationUtils
      * @param EntityManagerInterface $entityManager
      * @param UserPasswordEncoderInterface $userPasswordEncoder

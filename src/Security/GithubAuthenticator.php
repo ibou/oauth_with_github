@@ -121,6 +121,6 @@ class GithubAuthenticator extends SocialAuthenticator
     {
         $target = $this->getTargetPath($request->getSession(), $providerKey);
 
-        return new RedirectResponse($target ?? '/login');
+        return new RedirectResponse($target ?? $this->router->generate('app_login'));
     }
 }
